@@ -1,26 +1,83 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 const generateHtml = require('./src/generateHtml')
-//require all of the classes
+const Manager = require('./lib/Manager')
 
 
 const employees =[]
-inquirer.prompt({
-    type: "list",
-    name: "choice",
-    choices: ['Manager', 'Engineer', 'Intern' ],
-    message: "What's your role?"
-})
-.then(function(value){
-    writeHtml()
-    console.log(value)
-})
+//function makeTeam(){
+    inquirer.prompt({
+        type: "list",
+        name: "choice",
+        choices: ['Manager', 'Engineer', 'Intern' ],
+        message: "What's your role?"
+    })
+    .then(function(value){
+        writeHtml()
+        console.log(value)
+    })
 
 
-//if statments to check what is picked run function to create that type of employee, 
-//prompt all the question crete wmployee using class and that to employees
-//function ask if that want to add another employee or done? if sone then write html...
-//genertaHtml take wmployee array to crete html cards
+
+function createManager(){
+    inquirer.prompt([
+        {
+          type: "input",
+          name: "managerName",
+          message: "what is Manager's name?",
+          validate: answer => {
+              if(answer !== ""){
+                  return true;
+              }
+              return "invald name"
+          }
+
+        },
+        {
+            type: "input",
+            name: "id",
+            message: "What is your ID?",
+            validate: answer => {
+                if(answer !== ""){
+                    return true;
+                }
+                return "invald id"
+            }
+
+
+        },
+        {
+            input: "input",
+            name: "email",
+            message: "What is your emai?",
+            validate: answer => {
+                if(answer !== ""){
+                    return true;
+                }
+                return "invald email"
+            }
+
+        },
+        {
+            input: "input",
+            name: "officeNumber",
+            message: "What is your office number?",
+            validate: answer => {
+                if(answer !== ""){
+                    return true;
+                }
+                return "invald iffice number"
+            }
+        }
+    ])
+    .then(answers => {
+        const newManager = new Manager(answers.managerName, answers.id, answers.email, answers.officeNumber);
+        employees.push(newManager)  
+makeTeam
+    })
+}
+
+
 
 
 
