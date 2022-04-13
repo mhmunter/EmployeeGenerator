@@ -1,4 +1,64 @@
+const Engineer = require("../lib/Engineer")
+
 function generateHtml(employees){
+  const newArry = []
+  for(i=0; i < employees.length; i++){
+    if(employees[i].getRole() === "Manager"){
+      let str = `<div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title p-3 mb-2 bg-primary text-white">${employees[i].getName()}<br>${employees[i].getRole()}</h5>
+        <p class="card-text">
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">id: ${employees[i].getId()}</li>
+        <li class="list-group-item">email:${employees[i].getEmail()}</li>
+        <li class="list-group-item">office number:${employees[i].getOfficeNumber()}</li>
+      </ul>
+        </p>
+        
+      </div>
+      </div>`
+      newArry.push(str)
+
+    }else if(employees[i].getRole() === "Engineer"){
+      let str = `
+      <div class="card" style="width: 18rem;">
+<div class="card-body">
+  <h5 class="card-title p-3 mb-2 bg-primary text-white">${employees[i].getName()}<br>${employees[i].getRole()}</h5>
+  <p class="card-text">
+  <ul class="list-group list-group-flush">
+  <li class="list-group-item"> id:${employees[i].getId()}</li>
+  <li class="list-group-item">email:${employees[i].getEmail()}</li>
+  <li class="list-group-item"> github:${employees[i].getGithub()}</li>
+</ul>
+
+  </p>
+  
+</div>
+</div>
+`
+newArry.push(str)
+
+    }else if(employees[i].getRole() === "Intern"){
+      let str = `
+      <div class="card" style="width: 18rem;">
+<div class="card-body">
+  <h5 class="card-title p-3 mb-2 bg-primary text-white">${employees[i].getName()}<br>${employees[i].getRole()}</h5>
+  <p class="card-text">
+  <ul class="list-group list-group-flush">
+  <li class="list-group-item"> id:${employees[i].getId()}</li>
+  <li class="list-group-item">email:${employees[i].getEmail()}</li>
+  <li class="list-group-item"> school:${employees[i].getSchool()}</li>
+</ul>
+
+  </p>
+  
+</div>
+</div>
+`
+newArry.push(str)
+    }
+  }
+
 return `
 <!DOCTYPE html>
 <html lang="en">
@@ -17,49 +77,17 @@ return `
     <p class="n text-center fs-1" >My Team</p>
 </nav>
 
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-  <h5 class="card-title p-3 mb-2 bg-primary text-white">manager</h5>
-  <h6 class="card-subtitle mb-2 text-muted">name</h6>
-  <p class="card-text">
-    id:
-    email:
-    office number:
-
-  </p>
-  
-</div>
-</div>
+${newArry.join('')}
 
 
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-  <h5 class="card-title p-3 mb-2 bg-primary text-white">engineer</h5>
-  <h6 class="card-subtitle mb-2 text-muted">name</h6>
-  <p class="card-text">
-    id:
-    email:
-    github:
-
-  </p>
-  
-</div>
-</div>
 
 
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-  <h5 class="card-title p-3 mb-2 bg-primary text-white">intern</h5>
-  <h6 class="card-subtitle mb-2 text-muted">name</h6>
-  <p class="card-text">
-    id:
-    email:
-    school:
 
-  </p>
-  
-</div>
-</div>
+
+
+
+
+
 
 
 
