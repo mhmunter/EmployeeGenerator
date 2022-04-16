@@ -4,8 +4,6 @@
 ## Table of Contents
 [Discription](#Discription)
 
-[Usage](#usage)
-
 [Usage](#Usage)
 
 [Link](#Link)
