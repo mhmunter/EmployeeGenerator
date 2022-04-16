@@ -4,8 +4,9 @@ function generateHtml(employees){
   const newArry = []
   for(i=0; i < employees.length; i++){
     if(employees[i].getRole() === "Manager"){
-      let str = `<div class="card" style="width: 18rem;">
-      <div class="card-body">
+      let str = `
+      <div class="card" style="width: 18rem;">
+      <div class="card-body flex-row text-center justify-space-around align-center">
         <h5 class="card-title p-3 mb-2 bg-primary text-white">${employees[i].getName()}<br>${employees[i].getRole()}</h5>
         <p class="card-text">
         <ul class="list-group list-group-flush">
@@ -24,7 +25,7 @@ function generateHtml(employees){
       <div class="card" style="width: 18rem;">
 <div class="card-body">
   <h5 class="card-title p-3 mb-2 bg-primary text-white">${employees[i].getName()}<br>${employees[i].getRole()}</h5>
-  <p class="card-text">
+  <p class="card-text flex-row text-center justify-space-around align-center">
   <ul class="list-group list-group-flush">
   <li class="list-group-item"> id:${employees[i].getId()}</li>
   <li class="list-group-item">email:${employees[i].getEmail()}</li>
@@ -41,7 +42,7 @@ newArry.push(str)
     }else if(employees[i].getRole() === "Intern"){
       let str = `
       <div class="card" style="width: 18rem;">
-<div class="card-body">
+<div class="card-body flex-row text-center justify-space-around align-center">
   <h5 class="card-title p-3 mb-2 bg-primary text-white">${employees[i].getName()}<br>${employees[i].getRole()}</h5>
   <p class="card-text">
   <ul class="list-group list-group-flush">

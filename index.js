@@ -10,8 +10,9 @@ const Engineer = require('./lib/Engineer')
 
 
 
-
+//promt to set how many of each team members
 const employees =[]
+
 function makeTeam(){
     inquirer.prompt({
         type: "list",
@@ -47,7 +48,7 @@ makeTeam()
 
 
 
-
+//creates the manager 
 function createManager(){
     inquirer.prompt([
         {
@@ -95,7 +96,7 @@ function createManager(){
                 if(answer !== ""){
                     return true;
                 }
-                return "invald iffice number"
+                return "invald oiffice number"
             }
         }
     ])
@@ -108,7 +109,7 @@ makeTeam()
 }
 
 
-
+//creates enginers
 function createEngineer(){
     inquirer.prompt([
         {
@@ -167,7 +168,7 @@ makeTeam()
     })
 }
 
-
+//creates interns
 
 function createIntern(){
     inquirer.prompt([
@@ -229,7 +230,7 @@ makeTeam()
 
 
 
-
+//connects inputed data to create html function
 function writeHtml(){
     fs.writeFile("./dist/team.html", generateHtml(employees), function(err){
         if(err) throw err
