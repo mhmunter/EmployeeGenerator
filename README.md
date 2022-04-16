@@ -26,7 +26,7 @@
 
  </ol>
  
- https://drive.google.com/file/d/1eOUJIwgyVLVZpksy-4kbZyYBNll_LqFq/view
+ 
  
  ## **Link**
 [watch usage video](https://drive.google.com/file/d/1eOUJIwgyVLVZpksy-4kbZyYBNll_LqFq/view)
