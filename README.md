@@ -6,7 +6,7 @@
 
 [Usage](#usage)
 
-[Installation](#installation)
+[Usage](#Usage)
 
 [Link](#Link)
 
