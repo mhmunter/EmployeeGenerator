@@ -27,7 +27,7 @@
  </ol>
  
  ## **Link**
-[watch install video](https://drive.google.com/file/d/1WH2JlZjlkUek8CbDkzELl6RvhbmnDpfg/view)
+[watch install video](https://github.com/mhmunter/EmployeeGenerator/blob/main/Untitled_%20Apr%2016%2C%202022%204_24%20PM.mp4)
 
 ## **Questions:**
 mhmunter@yahoo.com
