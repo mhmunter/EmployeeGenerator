@@ -29,7 +29,7 @@
  https://drive.google.com/file/d/1eOUJIwgyVLVZpksy-4kbZyYBNll_LqFq/view
  
  ## **Link**
-[watch install video](https://drive.google.com/file/d/1eOUJIwgyVLVZpksy-4kbZyYBNll_LqFq/view)
+[watch usage video](https://drive.google.com/file/d/1eOUJIwgyVLVZpksy-4kbZyYBNll_LqFq/view)
 
 ## **Questions:**
 mhmunter@yahoo.com
