@@ -26,8 +26,10 @@
 
  </ol>
  
+ https://drive.google.com/file/d/1eOUJIwgyVLVZpksy-4kbZyYBNll_LqFq/view
+ 
  ## **Link**
-[watch install video](https://github.com/mhmunter/EmployeeGenerator/blob/main/Untitled_%20Apr%2016%2C%202022%204_24%20PM.mp4)
+[watch install video](https://drive.google.com/file/d/1eOUJIwgyVLVZpksy-4kbZyYBNll_LqFq/view)
 
 ## **Questions:**
 mhmunter@yahoo.com
