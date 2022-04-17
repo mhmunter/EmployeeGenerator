@@ -24,7 +24,7 @@ function generateHtml(employees){
       let str = `
       <div class="card" style="width: 18rem;">
 <div class="card-body">
-  <h5 class="card-title p-3 mb-2 bg-primary text-white">${employees[i].getName()}<br>${employees[i].getRole()}</h5>
+  <h5 class="card-title p-3 mb-2 bg-primary text-center text-white">${employees[i].getName()}<br>${employees[i].getRole()}</h5>
   <p class="card-text flex-row text-center justify-space-around align-center">
   <ul class="list-group list-group-flush">
   <li class="list-group-item"> id:${employees[i].getId()}</li>
