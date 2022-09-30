@@ -14,6 +14,7 @@
 
 ## Discription: 
 - A program that will use command line to prompts to create a professional tem listing. 
+Once your team is created in the team.html you can see visual representation by running on default browser. 
 
 ## **Usage** 
 <ol>
